@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-
-import {UIInput} from "../Controls/FormControls";
-
 import FrmIcon from './FrmIcon'
-
-var parse = require('html-react-parser');
 
 const CodeViewer = (props) => {
 
@@ -31,18 +26,20 @@ const CodeViewer = (props) => {
     <div>
 
       <div className='codeView'>
+
+        <div className={'codeView-code ' + (showCode ? 'codeView-code-show' : '')}>
+          <ul>
+            {props.code.map((item, index) => {
+              return (<li key={index}>{item}</li>)
+            })}
+          </ul>
+        </div>
+
         <div className='codeView-icons'>
           <button className='btn btn-sm' onClick={handleShowCode}><FrmIcon name='code' /></button>
           <button className='btn btn-sm' onClick={handleCopy}><FrmIcon name='copy' /></button>
         </div>
-        {showCode ?
-          <div className="codeView-code">
-            <ul>
-              {props.code.map((item, index) => {
-                return (<li key={index}>{item}</li>)
-              })}
-            </ul>
-          </div> : null}
+
       </div>
 
       <div>

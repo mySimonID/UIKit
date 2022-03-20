@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SectionArea from "./Helpers/SectionArea"
 import CodeViewer from './Helpers/CodeViewer';
 
-import {UICheckBox, UIRadio} from "./Controls/FormControls"
+import {UICheckBox, UIRadio} from "./Controls/UIKitControls"
 
 const ControlView = () => {
 
@@ -20,7 +20,7 @@ const ControlView = () => {
     "<li>",
     "  <UICheckBox",
     "    name='c1'",
-    "    className=''",
+    "    className='text-default'",
     "    checked={checkState.c1}",
     "    onChange={handleChange}>",
     "    Checked",
@@ -29,7 +29,7 @@ const ControlView = () => {
     "  <li>",
     "    <UICheckBox",
     "      name='c2'",
-    "      className=''",
+    "      className='text-default'",
     "     checked={checkState.c2}",
     "      onChange={handleChange}>",
     "      UnCheckbox",
@@ -46,7 +46,7 @@ const ControlView = () => {
     "//",
     "<UIRadio",
     "   name='r1'",
-    "   className=''",
+    "   className='text-danger'",
     "   checked={checkState.radioName === 'r1'}",
     "   onChange={handleRadioChange}>",
     "    Radio 1",
@@ -54,7 +54,7 @@ const ControlView = () => {
 
     "<UIRadio",
     "   name='r2'",
-    "   className=''",
+    "   className='text-primary'",
     "   checked={checkState.radioName === 'r2'}",
     "   onChange={handleRadioChange}>",
     "    Radio 2",
@@ -80,7 +80,7 @@ const ControlView = () => {
               <li>
                 <UICheckBox
                   name="c1"
-                  className=""
+                  className="text-default"
                   checked={checkState.c1}
                   onChange={handleChange}>
                   Checked
@@ -89,7 +89,7 @@ const ControlView = () => {
               <li>
                 <UICheckBox
                   name="c2"
-                  className=""
+                  className="text-default"
                   checked={checkState.c2}
                   onChange={handleChange}>
                   UnCheckbox
@@ -107,7 +107,7 @@ const ControlView = () => {
           <CodeViewer code={jsx2}>
             <UIRadio
               name="r1"
-              className=""
+              className="text-danger"
               checked={checkState.radioName === "r1"}
               onChange={handleRadioChange}>
               Radio 1
@@ -115,7 +115,7 @@ const ControlView = () => {
 
             <UIRadio
               name="r2"
-              className=""
+              className="text-primary"
               checked={checkState.radioName === "r2"}
               onChange={handleRadioChange}>
               Radio 2

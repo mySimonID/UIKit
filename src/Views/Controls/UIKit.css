@@ -1,0 +1,251 @@
+* {
+    /*          */
+    /* DEFAULTS */
+    /*          */
+    --default-text-color: #fff;
+    --default-input-text-color: #000;
+    --default-border-color: rgba(0, 0, 0, 0.6);
+    /*         */
+    /* COLOURS */
+    /*         */
+    --danger-color: #ff3636;
+    --default-color: #888;
+    --info-color: #2ca8ff;
+    --outline-color: #3ca800;
+    --primary-color: #f96332;
+    --success-color: #18ce0f;
+    --warning-color: #ffb236;
+    /*            */
+    /* FONT SIZES */
+    /*            */
+    --font-size-small: 0.5rem;
+    --font-size-default: 1.0rem;
+    --font-size-medium: 1.1rem;
+    --font-size-large: 2.0rem;
+    ;
+}
+
+
+/*
+ * Colours
+ */
+
+.text-danger {
+    color: var(--danger-color);
+}
+
+.text-default {
+    color: var(--default-color)
+}
+
+.text-info {
+    color: var(--info-color);
+}
+
+.text-outline {
+    color: var(--outline-color)
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-success {
+    color: var(--success-color);
+}
+
+.text-success {
+    color: (--warning-color);
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+
+/* 
+ * Buttons
+ */
+
+.btn {
+    font-weight: 400;
+    font-size: .8571em;
+    line-height: 1.35em;
+    margin: 10px 3px;
+    border: none;
+    border-radius: 0.1875rem;
+    padding: 11px 22px;
+    cursor: pointer;
+    background-color: var(--default-color);
+    color: var(--default-text-color)
+}
+
+.btn-sm {
+    font-size: 14px;
+    border-radius: 0.1875rem;
+    padding: 5px 15px
+}
+
+.btn-lg {
+    font-size: 1em;
+    border-radius: 0.25rem;
+    padding: 15px 48px;
+}
+
+.btn-round {
+    border-width: 1px;
+    border-radius: 30px!important;
+    padding: 11px 23px;
+}
+
+.btn-outline-info {
+    color: var(--outline-color);
+    border: 1px solid var(--outline-color);
+    background-color: white;
+}
+
+
+/* 
+* Colours
+*/
+
+.btn-info {
+    background-color: var(--info-color);
+    color: var(--default-text-color)
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--default-text-color)
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    color: var(--default-text-color)
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    color: var(--default-text-color)
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: var(--default-text-color)
+}
+
+
+/* 
+* Links
+*/
+
+.btn.btn-link,
+.navbar .navbar-nav>a.btn.btn-link {
+    color: var(--default-color)
+}
+
+.btn-link {
+    border: 0;
+    padding: 0.5rem 0.7rem;
+    background-color: transparent;
+}
+
+.btn-primary.btn-link {
+    color: var(--primary-color);
+}
+
+.btn-info.btn-link {
+    color: var(--info-color)
+}
+
+.btn-success.btn-link {
+    color: var(--success-color)
+}
+
+.btn-warning.btn-link {
+    color: var(--warning-color)
+}
+
+.btn-danger.btn-link {
+    color: var(--danger-color)
+}
+
+
+/* 
+* Input
+*/
+
+.form-input {
+    display: flex;
+    margin-bottom: 8px;
+    ;
+}
+
+.form-input label {
+    margin-right: 8px;
+    font-size: inherit;
+}
+
+.form-input input {
+    background-color: transparent;
+    color: var(--default-input-text-color);
+    height: auto;
+    font-size: inherit;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 1px solid var(--default-border-color);
+    box-shadow: none;
+}
+
+
+/*
+ * Scrolling
+ */
+
+.scrollWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+}
+
+.scrollContent {
+    height: 100%;
+}
+
+
+/*
+ * Typography
+ */
+
+.text1 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.text2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.text3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.text4 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}

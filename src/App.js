@@ -1,18 +1,13 @@
 
 import './App.css';
 
-import ButtonView from "./Views/ButtonView"
-import InputView from "./Views/InputView"
-import ControlView from "./Views/ControlView"
+import UIKitView from "./UIKitView"
 
 function App() {
   return (
-    <div className="App">
-      <ButtonView />
-      <InputView />
-      <ControlView />
-    </div>
-  );
+    <UIKitView />
+  )
+  
 }
 
 export default App;

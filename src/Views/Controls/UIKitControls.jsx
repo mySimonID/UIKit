@@ -3,6 +3,8 @@
 // 
 import React from 'react';
 
+import "./UIKit.css"
+
 export const UIButton = (props) => {
 
   const { onClick, className } = props;
@@ -29,7 +31,7 @@ export const UICheckBox = (props) => {
   }
 
   return (
-    <>
+    <div className={className}>
       <input
         name={name}
         type="checkbox"
@@ -38,7 +40,7 @@ export const UICheckBox = (props) => {
         onChange={(e) => onChange(e)}>
       </input>
       {props.children}
-    </>
+    </div>
   )
 
 }
@@ -56,12 +58,12 @@ export const UIRadio = (props) => {
   }
 
   return (
-    <div>
+    <div className={className}>
       <input
         name={name}
         type="radio"
         // value={props.checked}
-        checked={props.checked == true}
+        checked={props.checked === true}
         className={className}
         onChange={(e) => onChange(e)}>
       </input>
@@ -73,7 +75,7 @@ export const UIRadio = (props) => {
 
 export const UIInput = (props) => {
 
-  const { className } = props;
+  const { name,title, className, placeholder } = props;
 
   const onChange = (e) => {
 
@@ -84,14 +86,28 @@ export const UIInput = (props) => {
   }
 
   return (
-
-    <input
-      value={props.value}
-      className={className}
-      onChange={onChange}>
-      {props.children}
-    </input>
+    <div className={className}>
+      {title ? <label for={name} >{title}</label> : null}
+      <input
+        name={name}
+        value={props.value}
+       
+        placeholder={placeholder}
+        onChange={onChange}>
+        {props.children}
+      </input>
+    </div>
   )
+}
 
+export const UIScroll = (props) => {
+
+  return (
+    <div className='scrollWrapper'>
+      <div className='scrollContent'>
+        {props.children}
+      </div>
+    </div>
+  )
 }
 

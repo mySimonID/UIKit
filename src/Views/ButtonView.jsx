@@ -1,6 +1,6 @@
 import React from 'react';
 
-import  {UIButton} from './Controls/FormControls'
+import  {UIButton} from './Controls/UIKitControls'
 
 import SectionArea from "./Helpers/SectionArea"
 import CodeViewer from './Helpers/CodeViewer';
@@ -77,7 +77,7 @@ const ButtonView = () => {
       <SectionArea title="Links" desc="Links with colour variants">
         <div>
           <CodeViewer code={jsx4}>
-            "<UIButton className='btn btn-link'>Default</UIButton>
+            <UIButton className='btn btn-link'>Default</UIButton>
             <UIButton className='btn-link btn btn-primary'>Primary</UIButton>
             <UIButton className='btn-link btn btn-info'>Info</UIButton>
             <UIButton className='btn-link btn btn-success'>Success</UIButton>

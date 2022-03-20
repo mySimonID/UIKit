@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# UIKit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to UIKit a ReactJS based kit containing building blocks for creating applications.
 
 ## Available Scripts
 
