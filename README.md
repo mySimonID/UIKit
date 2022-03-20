@@ -20,11 +20,11 @@ The following controls are provided:
 
 - Copy the two files UIKit.css and UIKitControls.jsx from the src/Views/Controls folder to your project.
 - In your App.js file, import the UIKit.css file. For example:
--
+
 ```
 import "./CSS/UIKit.css"
 ```
--
+
 
 ## Using UIKit.
 
