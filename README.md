@@ -18,7 +18,7 @@ The following controls are provided:
 
 ## Installation
 
-- Copy the two files UIKit.css and UIKitControls.jsx from the src/Views/Controls folder to your project.
+- Copy the two files UIKit.css and UIKitControls.jsx from the src/Views/Controls folder to your React components.
 - In your App.js file, import the UIKit.css file. For example:
 
 ```
@@ -29,7 +29,7 @@ import "./CSS/UIKit.css"
 ## Using UIKit.
 
 - Once you have installed the two files to your project, then the UIKit controls can easily be used in your projects.
-- In one of your components, simply include the 
+- In one of your components, simply include the controls that you want.
 - For example:
 
 ```
