@@ -51,6 +51,8 @@ const myComponent = () => {
 }
 ```
 
+Further information can be found here: https://mysimonid.github.io/UIKit/
+
 
 ## License
 
