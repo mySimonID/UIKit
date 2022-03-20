@@ -18,7 +18,7 @@ The following controls are provided:
 
 ## Installation
 
-- Copy the two files UIKit.css and UIKitControls.jsx from the src/Controls folder to your project.
+- Copy the two files UIKit.css and UIKitControls.jsx from the src/Views/Controls folder to your project.
 - In your App.js file, import the UIKit.css file.
 - Copy the 
 
