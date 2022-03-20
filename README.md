@@ -1,7 +1,5 @@
 # UIKit
 
-## Description
-
 Welcome to UIKit, a ReactJS based kit containing building blocks for creating applications.
 
 - This is to drive consistency across an application
