@@ -1,4 +1,5 @@
 # UIKit
+Build apps consistantly
 
 ## Description
 
@@ -35,7 +36,7 @@ import "./CSS/UIKit.css"
 ```
 import { UIButton } from "./UIKitControls";
 
-const myComponent = () => {
+const myFunction = () => {
 
   const handleClick = () => {
     console.log('Clicked')
