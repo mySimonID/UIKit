@@ -12,7 +12,7 @@ const UIKitView = () => {
   return (
     <div className="App">
       <div>
-        <h2 className="text-default text-underline text-bold">UIKit</h2>
+        <h2 className="text-medium text-underline text-bold">UIKit</h2>
         <p className="text-default">
         Welcome to UIKit, a ReactJS based kit containing building blocks for creating applications.</p>
         <hr />

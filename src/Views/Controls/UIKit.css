@@ -235,24 +235,20 @@
 
 .text-small {
     font-size: var(--font-size-small);
-    font-weight: 300;
     line-height: 1.2;
 }
 
 .text-default {
     font-size: var(--font-size-default);
-    font-weight: 300;
     line-height: 1.2;
 }
 
 .text-medium {
     font-size: var(--font-size-medium);
-    font-weight: 300;
     line-height: 1.2;
 }
 
 .text-large {
     font-size: var(--font-size-large);
-    font-weight: 300;
     line-height: 1.2;
 }
