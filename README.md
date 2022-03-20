@@ -1,5 +1,4 @@
 # UIKit
-Build apps consistantly
 
 ## Description
 
