@@ -1,7 +1,7 @@
 {
     "name": "uikit",
     "version": "0.1.0",
-    "homepage": "https://gitname.github.io/UIKit",
+    "homepage": "https://mysimonid.github.io/UIKit",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.1.0",

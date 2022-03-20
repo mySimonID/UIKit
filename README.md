@@ -43,7 +43,7 @@ const myComponent = () => {
    
   return (
     <UIButton 
-      onCLick={handleClick}
+      onClick={handleClick}
        >
       Click Me
     </UIButton>
