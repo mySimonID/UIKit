@@ -1,16 +1,28 @@
 // 
 // FormControls.jsx
 // 
+// UIButton
+// UICheckBox
+// UIRadio
+// UIInput
+// UIScroll
+// 
 import React from 'react';
 
 import "./UIKit.css"
 
+/**
+ * UIButton
+ *  Props:
+ *   onClick - Click event, provided by the parent
+ *   className - CSS classes for formatting
+ *   children - Any jsx between  <UIButton> --children-- </UIButton>
+ */
 export const UIButton = (props) => {
 
   const { onClick, className } = props;
 
   return (
-
     <button
       className={className}
       onClick={onClick}>
@@ -18,6 +30,17 @@ export const UIButton = (props) => {
     </button>
   )
 }
+
+
+/**
+ * UICheckBox
+ *  Props:
+ *   name: name of the control
+ *   checked - value of the checkbox
+ *   onChange - onChange event provided by the parent
+ *   className - CSS classes for formatting
+ *   children - Any jsx between  <UICheckBox> --children-- </UICheckBox>
+ */
 
 export const UICheckBox = (props) => {
 
@@ -45,6 +68,15 @@ export const UICheckBox = (props) => {
 
 }
 
+/**
+ * UIRadio
+ *  Props:
+ *   name: name of the control
+ *   checked - value of the checkbox
+ *   onChange - onChange event provided by the parent
+ *   className - CSS classes for formatting
+ *   children - Any jsx between  <UIRadio> --children-- </UIRadio>
+ */
 
 export const UIRadio = (props) => {
 
@@ -62,7 +94,6 @@ export const UIRadio = (props) => {
       <input
         name={name}
         type="radio"
-        // value={props.checked}
         checked={props.checked === true}
         className={className}
         onChange={(e) => onChange(e)}>
@@ -73,16 +104,26 @@ export const UIRadio = (props) => {
 
 }
 
+/**
+ * UIInput
+ *  Props:
+ *   name: name of the control
+ *   title: Label title
+ *   placeholder: input placeholder
+ *   value: Value to be displayed in the input box
+ *   onChange - onChange event provided by the parent
+ *   className - CSS classes for formatting
+ */
+
 export const UIInput = (props) => {
 
-  const { name,title, className, placeholder } = props;
+  const { name, title, className, placeholder, value} = props;
 
   const onChange = (e) => {
 
     if (props.onChange) {
       props.onChange(e.target.value)
     }
-
   }
 
   return (
@@ -90,16 +131,20 @@ export const UIInput = (props) => {
       {title ? <label for={name} >{title}</label> : null}
       <input
         name={name}
-        value={props.value}
-       
+        value={value}
         placeholder={placeholder}
         onChange={onChange}>
-        {props.children}
       </input>
     </div>
   )
 }
 
+
+/**
+ * UIScroll
+ *  Props:
+ *   children - Any jsx between  <UIScroll> --children-- </UIScroll>
+ */
 export const UIScroll = (props) => {
 
   return (
