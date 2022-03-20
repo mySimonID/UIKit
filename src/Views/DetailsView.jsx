@@ -17,7 +17,7 @@ const DetailsView = () => {
         <li>
           <h3 className="text-default">UIKit.css</h3>
           <p>This contains all of the CSS required to format the controls.</p>
-          <p>All CSS elements are parametarised at the top of the CSS file.</p>
+          <p>The CSS elements are parametarised at the top of the CSS file for you to change as required.</p>
         </li>
         <li>
         <h3 className="text-default">UIKitControls.css</h3>
