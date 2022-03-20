@@ -21,7 +21,7 @@ const DetailsView = () => {
         </li>
         <li>
         <h3 className="text-default">UIKitControls.css</h3>
-        <p>To user one or more of the controls, import the controls as follows:</p>
+        <p>To use one or more of the controls, import the controls as follows:</p>
         <code>{`import {UIButton, UICheckBox} from "./UIKitControls"`}</code>
         <p>Then using the examples, incorporate the control in your project, for example</p>
         <code>{`<UIButton onClick={handleClick} />`}</code>

@@ -29,14 +29,13 @@ ul {
 }
 
 .App {
-    /* display: inline-block; */
     position: relative;
     width: 70%;
     text-align: left;
     padding: 1px;
     margin: 24px;
     margin-bottom: 30px;
-    /* border: 1px solid blue; */
+    background-color: white;
 }
 
 @media (max-width: 768px) {

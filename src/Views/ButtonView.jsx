@@ -8,14 +8,15 @@ import CodeViewer from './Helpers/CodeViewer';
 const ButtonView = () => {
 
   const jsx1 = [
-    "<UIButton className='btn btn-info btn-sm'>Small</UIButton>",
-    "<UIButton className='btn btn-info'>Medium</UIButton>",
-    "<UIButton className='btn btn-info btn-lg'>Large</UIButton>"
+    "<UIButton className='btn btn-primary btn-sm'>Small</UIButton>",
+    "<UIButton className='btn btn-primary btn-default'>Default</UIButton>",
+    "<UIButton className='btn btn-primary'>Medium</UIButton>",
+    "<UIButton className='btn btn-primary btn-lg'>Large</UIButton>"
   ]
 
   const jsx2 = [
-    "<UIButton className='btn btn-info'>Default</UIButton>",
-    "<UIButton className='btn btn-info btn-round'>Round</UIButton>",
+    "<UIButton className='btn btn-primary'>Default</UIButton>",
+    "<UIButton className='btn btn-primary btn-round'>Round</UIButton>",
     "<UIButton className='btn btn-round btn-outline-info'>Outline</UIButton>"
   ]
 
@@ -25,7 +26,6 @@ const ButtonView = () => {
     "<UIButton className='btn btn-info'>Info</UIButton>",
     "<UIButton className='btn btn-success'>Success</UIButton>",
     "<UIButton className='btn btn-warning'>Warning</UIButton>",
-    "<UIButton className='btn btn-danger'>Danger</UIButton>"
   ]
 
   const jsx4 = [
@@ -34,7 +34,6 @@ const ButtonView = () => {
     "<UIButton className='btn-link btn btn-info'>Info</UIButton>",
     "<UIButton className='btn-link btn btn-success'>Success</UIButton>",
     "<UIButton className='btn-link btn btn-warning'>Warning</UIButton>",
-    "<UIButton className='btn-link btn btn-danger'>Danger</UIButton>"
   ]
 
 
@@ -43,9 +42,10 @@ const ButtonView = () => {
       <SectionArea title="Buttons" desc="">
         <div>
           <CodeViewer code={jsx1}>
-            <UIButton className='btn btn-info btn-sm'>Small</UIButton>
-            <UIButton className='btn btn-info'>Medium</UIButton>
-            <UIButton className='btn btn-info btn-lg'>Large</UIButton>
+            <UIButton className='btn btn-primary btn-sm'>Small</UIButton>
+            <UIButton className='btn btn-primary btn-default'>Default</UIButton>
+            <UIButton className='btn btn-primary btn-md'>Medium</UIButton>
+            <UIButton className='btn btn-primary btn-lg'>Large</UIButton>
           </CodeViewer>
         </div>
       </SectionArea>
@@ -53,8 +53,8 @@ const ButtonView = () => {
       <SectionArea title="Button Variants" desc="Standard buttons with variants">
         <div>
           <CodeViewer code={jsx2}>
-            <UIButton className='btn btn-info'>Default</UIButton>
-            <UIButton className='btn btn-info btn-round'>Round</UIButton>
+            <UIButton className='btn btn-primary'>Default</UIButton>
+            <UIButton className='btn btn-primary btn-round'>Round</UIButton>
             <UIButton className='btn btn-round btn-outline-info'>Outline</UIButton>
           </CodeViewer>
         </div>
@@ -69,7 +69,6 @@ const ButtonView = () => {
             <UIButton className='btn btn-info'>Info</UIButton>
             <UIButton className='btn btn-success'>Success</UIButton>
             <UIButton className='btn btn-warning'>Warning</UIButton>
-            <UIButton className='btn btn-danger'>Danger</UIButton>
           </CodeViewer>
         </div>
       </SectionArea>
@@ -82,7 +81,6 @@ const ButtonView = () => {
             <UIButton className='btn-link btn btn-info'>Info</UIButton>
             <UIButton className='btn-link btn btn-success'>Success</UIButton>
             <UIButton className='btn-link btn btn-warning'>Warning</UIButton>
-            <UIButton className='btn-link btn btn-danger'>Danger</UIButton>
           </CodeViewer>
         </div>
       </SectionArea>

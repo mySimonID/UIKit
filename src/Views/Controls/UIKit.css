@@ -4,23 +4,25 @@
     /*          */
     --default-text-color: #fff;
     --default-input-text-color: #000;
+    --default-input-radius: 5px;
+    --default-input-padding: 5px;
     --default-border-color: rgba(0, 0, 0, 0.6);
+    --default-button-radius: 5px;
     /*         */
     /* COLOURS */
     /*         */
-    --danger-color: #ff3636;
     --default-color: #888;
-    --info-color: #2ca8ff;
+    --info-color: #f96332;
     --outline-color: #3ca800;
-    --primary-color: #f96332;
+    --primary-color: #2ca8ff;
     --success-color: #18ce0f;
-    --warning-color: #ffb236;
+    --warning-color: #ffcc00;
     /*            */
     /* FONT SIZES */
     /*            */
-    --font-size-small: 0.5rem;
+    --font-size-small: 0.6rem;
     --font-size-default: 1.0rem;
-    --font-size-medium: 1.1rem;
+    --font-size-medium: 1.5rem;
     --font-size-large: 2.0rem;
     ;
 }
@@ -29,10 +31,6 @@
 /*
  * Colours
  */
-
-.text-danger {
-    color: var(--danger-color);
-}
 
 .text-default {
     color: var(--default-color)
@@ -54,7 +52,7 @@
     color: var(--success-color);
 }
 
-.text-success {
+.text-warning {
     color: (--warning-color);
 }
 
@@ -77,7 +75,7 @@
 
 .btn {
     font-weight: 400;
-    font-size: .8571em;
+    font-size: var(font-size-default);
     line-height: 1.35em;
     margin: 10px 3px;
     border: none;
@@ -89,21 +87,36 @@
 }
 
 .btn-sm {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     border-radius: 0.1875rem;
     padding: 5px 15px
 }
 
+.btn-default {
+    font-size: var(--font-size-default);
+    border-radius: var(default-button-radius);
+    padding: 5px 15px
+}
+
+.btn-md {
+    font-size: var(--font-size-medium);
+    border-radius: var(default-button-radius);
+    padding: 8px 25px
+}
+
 .btn-lg {
-    font-size: 1em;
-    border-radius: 0.25rem;
+    font-size: var(--font-size-large);
+    border-radius: var(default-button-radius);
     padding: 15px 48px;
 }
 
+
+/*  */
+
 .btn-round {
     border-width: 1px;
-    border-radius: 30px!important;
-    padding: 11px 23px;
+    border-radius: 50px!important;
+    /* padding: 11px 23px; */
 }
 
 .btn-outline-info {
@@ -134,11 +147,6 @@
 
 .btn-warning {
     background-color: var(--warning-color);
-    color: var(--default-text-color)
-}
-
-.btn-danger {
-    background-color: var(--danger-color);
     color: var(--default-text-color)
 }
 
@@ -174,10 +182,6 @@
     color: var(--warning-color)
 }
 
-.btn-danger.btn-link {
-    color: var(--danger-color)
-}
-
 
 /* 
 * Input
@@ -190,6 +194,8 @@
 }
 
 .form-input label {
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: 8px;
     font-size: inherit;
 }
@@ -198,9 +204,10 @@
     background-color: transparent;
     color: var(--default-input-text-color);
     height: auto;
+    padding: var(--default-input-padding);
     font-size: inherit;
     font-weight: 300;
-    border-radius: 5px;
+    border-radius: var(--default-input-radius);
     border: 1px solid var(--default-border-color);
     box-shadow: none;
 }
@@ -226,26 +233,26 @@
  * Typography
  */
 
-.text1 {
-    font-size: 1rem;
+.text-small {
+    font-size: var(--font-size-small);
     font-weight: 300;
     line-height: 1.2;
 }
 
-.text2 {
-    font-size: 1.5rem;
+.text-default {
+    font-size: var(--font-size-default);
     font-weight: 300;
     line-height: 1.2;
 }
 
-.text3 {
-    font-size: 1.8rem;
+.text-medium {
+    font-size: var(--font-size-medium);
     font-weight: 300;
     line-height: 1.2;
 }
 
-.text4 {
-    font-size: 2rem;
+.text-large {
+    font-size: var(--font-size-large);
     font-weight: 300;
     line-height: 1.2;
 }

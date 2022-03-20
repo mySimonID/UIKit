@@ -46,7 +46,7 @@ const ControlView = () => {
     "//",
     "<UIRadio",
     "   name='r1'",
-    "   className='text-danger'",
+    "   className='text-warning'",
     "   checked={checkState.radioName === 'r1'}",
     "   onChange={handleRadioChange}>",
     "    Radio 1",
@@ -107,7 +107,7 @@ const ControlView = () => {
           <CodeViewer code={jsx2}>
             <UIRadio
               name="r1"
-              className="text-danger"
+              className="text-warning"
               checked={checkState.radioName === "r1"}
               onChange={handleRadioChange}>
               Radio 1
